@@ -3,6 +3,9 @@
 
 Trying to implement this in both rust and python. Currently the python is running faster than the rust, which seems off. Maybe someone more familiar with rust can help me out...
 
+- For python, I am using `gmpy2` and computing my big ints as `mpz` types. 
+- For Rust, I am using `rug` for my big integers.
+
 ## Upper bound 2^40
 
 ```
