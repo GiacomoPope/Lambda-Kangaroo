@@ -1,10 +1,30 @@
 # Lambda-Kangaroo
 > A Lambda Method for Catching Kangaroos
 
-Trying to implement this in both rust and python. Currently the python is running faster than the rust, which seems off. Maybe someone more familiar with rust can help me out...
+## Disclaimer
+
+I am VERY new to rust. I'm trying to do some fun crypto things as a way to learn, but if you're a rust fan, please accept my apologies for the state of my `.rs` files... 
+
+## Algorithm 
+
+```
+// Full discussion 
+// TODO
+```
+
+This implementation follows:
+
+- [Pollard's original paper](https://www.ams.org/journals/mcom/1978-32-143/S0025-5718-1978-0491431-9/S0025-5718-1978-0491431-9.pdf)
+- [CryptoPals 58](https://toadstyle.org/cryptopals/58.txt)
+
+I have implemented this in both python3 and rust. I'm more familiar with python3, so used this as a way to make sure the algorithm ran as expected then did my best to make a reasonable rust implementation of the same algorithm. Currently the python is running at approximately the same speed as rust, which seems off.
+
+Maybe someone more familiar with rust can help me out...
 
 - For python, I am using `gmpy2` and computing my big ints as `mpz` types. 
 - For Rust, I am using `rug` for my big integers.
+
+As underneath the good this is all GMP, maybe the similar run speed is to be expected... Although I would still expect rust to outperform python.
 
 ## Upper bound 2^40
 
